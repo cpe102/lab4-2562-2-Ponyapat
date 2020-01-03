@@ -2,20 +2,21 @@
 #include <string>
 using namespace std;
 
-void printString1(string s, int N){
+void printString1(string s, int N) {
 	int count = 0;
-	while(count < N){
+	while (count < N) {
 		cout << s;
 		count++;
 	}
 }
 
-void printString2(string s1, string s2, int N){
+void printString2(string s1, string s2, int N) {
 	int count = 0;
-	while(count < N){
-		if(count%2 == 0){
+	while (count < N) {
+		if (count % 2 == 0) {
 			cout << s1;
-		}else{
+		}
+		else {
 			cout << s2;
 		}
 		count++;
@@ -26,10 +27,13 @@ void printString2(string s1, string s2, int N){
 int main()
 {
 	int count = 0;
-	while(count < 10){
-		//Edit code here using printString1() and printString2()
-		
+	while (count < 10) {
+
+		printString1("5", 9 - count);
+		printString2("6", "9", count);
+		cout << endl;
+
 		count++;
 	}
-    return 0;
+	return 0;
 }
